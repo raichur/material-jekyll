@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
@@ -8,7 +7,6 @@
 */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,500italic);
-
 @font-face {
   font-family: 'icomoon';
   src:url('fonts/icomoon.eot?cgbs0a');
@@ -19,7 +17,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -28,64 +25,48 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-instagram:before {
   content: "\e600";
 }
-
 .icon-favorite:before {
   content: "\e601";
 }
-
 .icon-favorite-outline:before {
   content: "\e602";
 }
-
 .icon-drafts:before {
   content: "\e603";
 }
-
 .icon-keyboard-arrow-down:before {
   content: "\e604";
 }
-
 .icon-keyboard-arrow-left:before {
   content: "\e605";
 }
-
 .icon-keyboard-arrow-right:before {
   content: "\e606";
 }
-
 .icon-keyboard-arrow-up:before {
   content: "\e607";
 }
-
 .icon-brightness-2:before {
   content: "\e608";
 }
-
 .icon-brightness-4:before {
   content: "\e609";
 }
-
 .icon-star:before {
   content: "\e60a";
 }
-
 .icon-twitter:before {
   content: "\ea91";
 }
-
 .icon-dribbble:before {
   content: "\eaa6";
 }
-
 .icon-github:before {
   content: "\eab1";
 }
@@ -99,9 +80,7 @@ $base-font-family: Roboto, Helvetica Neue, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-
 $spacing-unit:     30px;
-
 $darkPrimaryColor:   #0288D1;
 $primaryColor:       #03A9F4;
 $lightPrimaryColor:  #B3E5FC;
@@ -111,7 +90,6 @@ $primaryTextColor:   #212121;
 $secondaryTextColor: #727272;
 $dividerColor:       #B6B6B6;
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
 
@@ -131,8 +109,4 @@ $on-laptop:        800px;
 * Imports
 */
 
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "base", "layout", "syntax-highlighting";

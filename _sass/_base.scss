@@ -1,280 +1,170 @@
 /**
- * Reset some basic elements
- */
+* Reset some basic elements
+*/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $primaryTextColor;
-    background: $textPrimaryColor;
-    -webkit-text-size-adjust: 100%;
-}
-
 
 /**
 * Links
 */
+
 a {
   text-decoration: none;
 }
 
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+* Set `margin-bottom` to maintain vertical rhythm
+*/
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
 
 
-
 /**
- * Images
- */
+* Images
+*/
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 
-
 /**
- * Figures
- */
+* Figures
+*/
 figure > img {
-    display: block;
+  display: block;
 }
 
 figcaption {
-    font-size: $small-font-size;
+  font-size: $small-font-size;
 }
 
 
 
 /**
- * Lists
- */
+* Lists
+*/
 ul, ol {
-    margin-left: $spacing-unit;
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
 
 
 
 /**
- * Headings
- */
+* Headings
+*/
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 
 
 /**
- * Links
- */
+* Links
+*/
+
 a {
-    color: $accentColor;
-    text-decoration: none;
-    background: transparent;
-
-    &:visited {
-        color: darken($accentColor, 15%);
-    }
-
-    &:hover {
-        color: $primaryTextColor;
-        text-decoration: underline;
-    }
+  color: $accentColor;
+  text-decoration: none;
+  background: transparent;
+  &:visited {
+    color: darken($accentColor, 15%);
+  }
+  &:hover {
+    color: $primaryTextColor;
+    text-decoration: underline;
+  }
 }
 
 
 
 /**
- * Blockquotes
- */
+* Blockquotes
+*/
+
 blockquote {
-    color: $secondaryTextColor;
-    border-left: 4px solid $dividerColor;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+  color: $secondaryTextColor;
+  border-left: 4px solid $dividerColor;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 
 
 /**
- * Code formatting
- */
+* Code formatting
+*/
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $dividerColor;
-    border-radius: 3px;
-    color: #eef;
+  font-size: 15px;
+  border: 1px solid $dividerColor;
+  border-radius: 3px;
+  color: $primaryTextColor;
 }
-
 code {
-    padding: 1px 5px;
+  padding: 1px 5px;
 }
-
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  padding: 8px 12px;
+  overflow-x: scroll;
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 
 /**
- * Clearfix
- */
+* Clearfix
+*/
+
 %clearfix {
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 
-
 /**
- * Icons
- */
+* Icons
+*/
+
 .icon {
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 
-        path {
-            fill: $secondaryTextColor;
-        }
+    path {
+      fill: $secondaryTextColor;
     }
-}
-
-/**
- * Material Design
- */
-.paper-button:before {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-}
-.btn-next {
-  display: block;
-  left: 0;
-  pointer-events: all;
-  position: absolute;
-  right: 0;
-  margin-top: -110px;
-}
-.paper-button:before, .paper-button:after {
-  background: no-repeat 50% 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
-  content: "";
-  height: 50px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: $textPrimaryColor;
-  -moz-transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -moz-transition: all .28s cubic-bezier(.4,0,.2,1);
-  -webkit-transition: all .28s cubic-bezier(.4,0,.2,1);
-  transition: all .28s cubic-bezier(.4,0,.2,1);
-  width: 50px;
-}
-.btn-next:hover {
-  opacity: 1;
-}
-header, section {
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  h1 {
-    font-size: 4em;
-    bottom: 35%;
-    color: $textPrimaryColor;
-    font-size: 4em;
-    height: 1em;
-    left: 0;
-    line-height: 1;
-    margin: auto;
-    position: absolute;
-    text-align: left;
-    width: auto;
-    font-weight: 400;
   }
-    padding-left: 6.5%;
-    padding-right: 6.5%;
-}
-.site-header {
-  h1 {
-    font-size: 4rem;
-    bottom: 35%;
-    color: #fff;
-    height: 1em;
-    left: 0;
-    line-height: 1;
-    margin: auto;
-    position: absolute;
-    text-align: left;
-    width: auto;
-  }
-}
-.wrapper {
-  padding: 0 0 30px;
-  position: relative;
-  padding-bottom: 25%;
-  margin: 0 auto;
-  max-width: 1440px;
-}
-
-.page-content {
-  padding-top: 90px;
-}
-.btn-next {
-    margin-left: 6.5%;
 }
