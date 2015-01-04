@@ -3,39 +3,123 @@
 ---
 @charset "utf-8";
 
+/**
+* Fonts
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,500italic);
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?cgbs0a');
+  src:url('fonts/icomoon.eot?#iefixcgbs0a') format('embedded-opentype'),
+  url('fonts/icomoon.woff?cgbs0a') format('woff'),
+  url('fonts/icomoon.ttf?cgbs0a') format('truetype'),
+  url('fonts/icomoon.svg?cgbs0a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\e600";
+}
+
+.icon-favorite:before {
+  content: "\e601";
+}
+
+.icon-favorite-outline:before {
+  content: "\e602";
+}
+
+.icon-drafts:before {
+  content: "\e603";
+}
+
+.icon-keyboard-arrow-down:before {
+  content: "\e604";
+}
+
+.icon-keyboard-arrow-left:before {
+  content: "\e605";
+}
+
+.icon-keyboard-arrow-right:before {
+  content: "\e606";
+}
+
+.icon-keyboard-arrow-up:before {
+  content: "\e607";
+}
+
+.icon-brightness-2:before {
+  content: "\e608";
+}
+
+.icon-brightness-4:before {
+  content: "\e609";
+}
+
+.icon-star:before {
+  content: "\e60a";
+}
+
+.icon-twitter:before {
+  content: "\ea91";
+}
+
+.icon-dribbble:before {
+  content: "\eaa6";
+}
+
+.icon-github:before {
+  content: "\eab1";
+}
 
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+/**
+* Variables
+*/
+
+$base-font-family: Roboto, Helvetica Neue, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
+$darkPrimaryColor:   #0288D1;
+$primaryColor:       #03A9F4;
+$lightPrimaryColor:  #B3E5FC;
+$textPrimaryColor:   #FFFFFF;
+$accentColor:        #FF5252;
+$primaryTextColor:   #212121;
+$secondaryTextColor: #727272;
+$dividerColor:       #B6B6B6;
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
 
+/**
+* Mixins
+*/
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -43,8 +127,10 @@ $on-laptop:        800px;
 }
 
 
+/**
+* Imports
+*/
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
