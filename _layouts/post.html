@@ -3,3 +3,12 @@ layout: default
 ---
 
 {{ content }}
+
+<div id="post-nav" class="clearfix">
+  {% if page.previous.url %}
+  <a rel="previous" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+  <a rel="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>

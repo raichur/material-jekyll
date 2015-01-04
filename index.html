@@ -4,9 +4,16 @@ layout: default
 
 <div id="home">
   <ul class="post-list">
-    {% for post in site.posts %}
+      {% for post in site.posts %}
+
+      {% assign words = post.content | number_of_words %}
+      {% if words <= 90 %}
+      {% assign reading-time = "1 minute" %}
+      {% else %}
+      {% assign reading-time = words | divided_by:180 | append:" minute" %}
+      {% endif %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ reading-time }} read ● {{ post.date | date: '%A, %-d %B %Y' }}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>

@@ -5,12 +5,22 @@
 
   <body>
 
+    {% if page.path contains '_posts' %}
+      {% assign words = content | number_of_words %}
+      {% if words <= 90 %}
+      {% assign reading-time = "1 minute" %}
+      {% elsif words < 270 %}
+      {% assign reading-time = "1 minute" %}
+      {% else %}
+      {% assign reading-time = words | divided_by:180 | append:" minute" %}
+      {% endif %}
+    {% endif %}
+
     {% include header.html %}
 
-    <a class="paper-button {% if page.path contains '_post' %}btn-down" href="{{site.baseurl}}"{% else %}btn-left" href="#home"{% endif %}></a>
+    <a class="paper-button {% if page.path contains '_post' %}btn-down" href="{{site.baseurl}}/"{% else %}btn-left" href="#home"{% endif %}></a>
 
     <section class="page-content">
-      {% if page.path contains '_posts' %}<div class="kudos" data-url="{{ page.url }}"></div>{% endif %}
         {{ content }}
     </section>
 
