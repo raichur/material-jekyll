@@ -8,7 +8,8 @@
     {% include header.html %}
 
     <section class="page-content">
-      <a class="paper-button btn-next" data-g-event="nav" href="#home"><span class="icon-keyboard-arrow-down"></span></a>
+      <a class="paper-button btn-next" href="#home"></a>
+      {% if page.path contains '_posts' %}<div class="kudos" data-url="{{ page.url }}"></div>{% endif %}
         {{ content }}
     </section>
 

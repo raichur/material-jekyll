@@ -8,7 +8,10 @@ url: "http://joshuaraichur.com/material-jekyll"
 # Social usernames
 twitter_username: JoshuaRaichur
 github_username:  raichur
+kudos: true
 
 # Build settings
 markdown: kramdown
-include: ['_pages']
+include: ['_pages', '_assets']
+sass:
+  sass_dir: '_assets/_sass'
