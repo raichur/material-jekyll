@@ -2,8 +2,7 @@
 title: Material Jekyll
 email: hello@joshuaraichur.com
 description: A Material Design inspired Jekyll theme
-baseurl: ""
-url: "http://joshuaraichur.com/material-jekyll"
+baseurl: "/material-jekyll"
 
 # Social usernames
 twitter_username: JoshuaRaichur
