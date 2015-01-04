@@ -7,11 +7,14 @@
 
     {% include header.html %}
 
+    <a class="paper-button {% if page.path contains '_post' %}btn-down" href="/"{% else %}btn-left" href="#home"{% endif %}></a>
+
     <section class="page-content">
-      <a class="paper-button btn-next" href="#home"></a>
       {% if page.path contains '_posts' %}<div class="kudos" data-url="{{ page.url }}"></div>{% endif %}
         {{ content }}
     </section>
+
+    {% include footer.html %}
 
   </body>
 
