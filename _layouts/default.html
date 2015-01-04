@@ -7,7 +7,7 @@
 
     {% include header.html %}
 
-    <a class="paper-button {% if page.path contains '_post' %}btn-down" href="/"{% else %}btn-left" href="#home"{% endif %}></a>
+    <a class="paper-button {% if page.path contains '_post' %}btn-down" href="{{site.baseurl}}"{% else %}btn-left" href="#home"{% endif %}></a>
 
     <section class="page-content">
       {% if page.path contains '_posts' %}<div class="kudos" data-url="{{ page.url }}"></div>{% endif %}
