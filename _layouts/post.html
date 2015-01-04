@@ -6,9 +6,9 @@ layout: default
 
 <div id="post-nav" class="clearfix">
   {% if page.previous.url %}
-  <a rel="previous" id="previous_link" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  <a rel="previous" id="previous_link" href="{{ site.baseurl }}{{page.previous.url}}">{{ site.baseurl }}{{page.previous.title}}</a>
   {% endif %}
   {% if page.next.url %}
-  <a rel="next" id="next_link" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  <a rel="next" id="next_link" href="{{ site.baseurl }}{{page.next.url}}">{{ site.baseurl }}{{page.next.title}} &raquo;</a>
   {% endif %}
 </div>

@@ -33,8 +33,11 @@ shortcut.add("Shift+Up", function() {
 
 $(".wrapper h1, .wrapper p, section").velocity("transition.slideDownIn", 400, { stagger: 550 });
 $(".paper-button").delay(100).velocity("transition.fadeIn", 250);
-$('#home').velocity("scroll", 1000)
-.velocity({ opacity: 1 });
+$('a[id="home"]').click(function(e){
+  e.preventDefault();
+  $('#home').velocity("scroll", 1000)
+  .velocity({ opacity: 1 });
+});
 /*
 * Nav
 */
