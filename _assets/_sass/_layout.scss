@@ -137,6 +137,8 @@ header, section, footer {
       margin-top: 5px;
       font-size: 45px;
     }
+    padding-bottom: 10px;
+    border-bottom: 1px solid lighten($dividerColor, 20%);
   }
 }
 
@@ -258,6 +260,12 @@ footer {
   color: $dividerColor;
   padding-top: 30px;
   padding-bottom: 20px;
+  a {
+    transition: .2s all ease;
+    &:hover {
+      color: $textPrimaryColor;
+    }
+  }
 }
 .pulse {
   color: $accentColor;

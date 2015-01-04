@@ -18,7 +18,7 @@
 
     {% include header.html %}
 
-    <a class="paper-button {% if page.path == base_url %}btn-left" href="#home"{% else %}btn-down" href="{{site.baseurl}}/"{% endif %}></a>
+    <a class="paper-button {% if page.home == true %}btn-left" href="#home"{% else %}btn-down" href="{{site.baseurl}}/"{% endif %}></a>
 
     <section class="page-content">
         {{ content }}
