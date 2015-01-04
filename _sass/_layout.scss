@@ -12,10 +12,22 @@ body {
 }
 
 
+
+/**
+* Section
+*/
+section {
+  font-size: 20px;
+  line-height: 32px;
+  p {
+    color: $primaryTextColor;
+    font-weight: 300;
+  }
+}
+
 /**
 * Site header
 */
-
 header {
   background: $primaryColor;
   color: $textPrimaryColor;
@@ -36,7 +48,7 @@ header {
   h1 {
     font-size: 4rem;
     bottom: 35%;
-    color: #fff;
+    color: $textPrimaryColor;
     height: 1em;
     left: 0;
     line-height: 1;
@@ -45,16 +57,27 @@ header {
     text-align: left;
     width: auto;
   }
+  p {
+    bottom: 23%;
+    color: $textPrimaryColor;
+    height: 1em;
+    left: 0;
+    line-height: 1;
+    margin: auto;
+    position: absolute;
+    text-align: left;
+    width: auto;
+    font-weight: 200;
+    font-size: 1.6rem;
+  }
 }
 header, section {
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   h1 {
-    font-size: 4em;
     bottom: 35%;
     color: $textPrimaryColor;
-    font-size: 4em;
     height: 1em;
     left: 0;
     line-height: 1;
@@ -76,14 +99,34 @@ header, section {
 }
 
 .page-content {
-  padding-top: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/**
+* Post list
+*/
+.post-list {
+  li {
+    list-style: none;
+    .post-meta {
+      color: $secondaryTextColor;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 34px;
+    }
+  }
 }
 
 
 /**
 * Buttons and all that jazz
 */
-
 .paper-button:before {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
@@ -94,7 +137,7 @@ header, section {
   pointer-events: all;
   position: absolute;
   right: 0;
-  margin-top: -115px;
+  margin-top: -75px;
 }
 .paper-button:before, .paper-button:after {
   background: no-repeat 50% 50%;
