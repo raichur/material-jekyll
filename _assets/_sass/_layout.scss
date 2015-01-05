@@ -411,3 +411,46 @@ footer {
   -webkit-transform: scale(1.3); /* Chrome, Safari, Opera */
   transform: scale(1.3);
 }
+
+
+/**
+* Media Queries
+*/
+@include media-query($on-tablet) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  .post-list h2 a {
+    font-size: 1.8rem;
+  }
+  .post-list li h2 {
+    margin-top: 0px;
+  }
+  .wrapper {
+    padding-bottom: 40%;
+  }
+  header, section, footer {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+  }
+}
+@include media-query($on-palm) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  .wrapper {
+    padding-bottom: 50%;
+  }
+  header, section, footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

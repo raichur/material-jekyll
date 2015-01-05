@@ -7,13 +7,17 @@
   </div>
 </header>
 
-<nav>
-  <span></span>
-</nav>
+<div id="nav-wrapper">
 
-<ul class="list">
-  <li><a href="{{ site.baseurl }}/">Home</a></li>
-  {% assign pages = site.pages | sort:"url" %}
-  {% for p in pages order:ascending %}{% if p.is_in_nav == true %}<li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
-  {% endif %}{% endfor %}
-</ul>
+  <nav>
+    <span></span>
+  </nav>
+
+  <ul class="list">
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    {% assign pages = site.pages | sort:"url" %}
+    {% for p in pages order:ascending %}{% if p.is_in_nav == true %}<li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+    {% endif %}{% endfor %}
+  </ul>
+  
+</div>
