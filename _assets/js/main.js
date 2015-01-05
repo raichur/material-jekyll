@@ -33,10 +33,20 @@ shortcut.add("Shift+Up", function() {
 
 $(".wrapper h1, .wrapper p, section, footer").velocity("transition.slideDownIn", 400, { stagger: 550 });
 $(".paper-button").delay(100).velocity("transition.fadeIn", 250);
-$('a[id="home"]').click(function(e){
-  e.preventDefault();
-  $('#home').velocity("scroll", 1000)
-  .velocity({ opacity: 1 });
+$(document).ready(function() {
+  // bind click event to all internal page anchors
+  $("a[href*=#]").bind("click", function(e) {
+    // prevent default action and bubbling
+    e.stopPropagation();
+    // set target to anchor's "href" attribute
+    var target = $(this).attr("href");
+    // scroll to each target
+    $(target).velocity("scroll", {
+      duration: 300,
+      offset: -40,
+      easing: "ease-in"
+    });
+  });
 });
 /*
 * Nav
