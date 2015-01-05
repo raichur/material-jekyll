@@ -18,9 +18,9 @@ if(document.getElementById("next_link")) {
     window.open(document.getElementById("next_link").getAttribute('href'),'_self',false);
   });
 }
-if(document.getElementById("prev_link")) {
+if(document.getElementById("previous_link")) {
   shortcut.add("Right",function() {
-    window.open(document.getElementById("prev_link").getAttribute('href'),'_self',false);
+    window.open(document.getElementById("previous_link").getAttribute('href'),'_self',false);
   });
 }
 shortcut.add("Shift+Up", function() {

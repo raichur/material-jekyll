@@ -3,7 +3,7 @@
 <header>
   <div class="wrapper">
     {% if page.path contains '_posts' %}<p class="post-meta">{{ reading-time }} read ● {{ page.date | date: '%-d %B %Y' }}</p>{% else if page.sub %}<p>{{ site.sub }}</p>{% else %}<p>{{ site.description }}</p>{% endif %}
-    {% if page.title %}{% if page.link %}<a class="linked-post" href="{{ page.link }}">{% endif %}<h1><span class="icon-call-made"></span>{{ page.title }}</h1>{% if page.link %}</a>{% endif %}{% else %}<h1>{{ site.title }}</h1>{% endif %}
+    {% if page.title %}{% if page.link %}<a class="linked-post" href="{{ page.link }}">{% endif %}<h1>{% if page.link %}<span class="icon-call-made"></span>{% endif %}{{ page.title }}</h1>{% if page.link %}</a>{% endif %}{% else %}<h1>{{ site.title }}</h1>{% endif %}
   </div>
 </header>
 
