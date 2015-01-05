@@ -146,7 +146,14 @@ pre {
 /**
 * Clearfix
 */
-
+*, *:after, *:before  {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
 %clearfix {
 
   &:after {

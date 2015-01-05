@@ -37,6 +37,16 @@ section {
     color: $primaryTextColor;
     font-weight: 300;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  ul li {
+    margin-left: 20px;
+  }
+  blockquote {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
 }
 
 /**
@@ -127,9 +137,13 @@ header, section, footer {
       color: $secondaryTextColor;
     }
     a {
+      color: $primaryTextColor;
       transition: .2s all ease;
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 600;
+      &:hover {
+        color: $secondaryTextColor;
+      }
     }
     h2 {
       margin-top: 5px;
@@ -288,9 +302,7 @@ footer {
   padding-bottom: 20px;
   a {
     transition: .2s all ease;
-    &:hover {
-      color: $textPrimaryColor;
-    }
+      color: $textPrimaryColor !important;
   }
   p {
     padding-top: 10px;
@@ -450,6 +462,9 @@ footer {
   header p {
     margin-top: 5px;
     font-size: 1rem;
+  }
+  section span {
+    font-size: 1.2rem;
   }
   header, section, footer {
     padding-left: 20px;
