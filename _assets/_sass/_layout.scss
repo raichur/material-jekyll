@@ -198,11 +198,13 @@ nav {
     @extend %menu-lines;
     &:before {
       position: absolute;
+      display: block;
       @extend %menu-lines;
       transform: translate(0, -24px);
     }
     &:after {
       position: absolute;
+      display: block;
       @extend %menu-lines;
       transform: translate(0, 24px);
     }
