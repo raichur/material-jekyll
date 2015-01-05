@@ -2,8 +2,8 @@
 
 A simple [Jekyll](http://jekyllrb.com) theme inspired by Google's new visual language, [Material Design](http://www.google.com/design/spec/material-design/introduction.html).
 
-<img src="{{ site.baseurl }}/_assets/images/nav.png">
-<img src="{{ site.baseurl }}/_assets/images/home.png">
+<img src="/_assets/images/nav.png">
+<img src="/_assets/images/home.png">
 
 
 ## Setup:
