@@ -46,7 +46,8 @@ header {
   background: $primaryColor;
   color: $textPrimaryColor;
   position: relative;
-
+  padding-top: 13%;
+  padding-bottom: 18%;
   a {
     font-size: 26px;
     line-height: 56px;
@@ -61,7 +62,6 @@ header {
   }
   h1 {
     font-size: 4rem;
-    bottom: 35%;
     color: $textPrimaryColor;
     height: 1em;
     left: 0;
@@ -72,7 +72,6 @@ header {
     width: auto;
   }
   p {
-    bottom: 23%;
     color: $textPrimaryColor;
     height: 1em;
     left: 0;
@@ -91,7 +90,6 @@ header, section, footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   h1 {
-    bottom: 35%;
     color: $textPrimaryColor;
     height: 1em;
     left: 0;
@@ -101,6 +99,7 @@ header, section, footer {
     text-align: left;
     width: auto;
     font-weight: 400;
+    margin-top: 25px;
   }
   padding-left: 6.5%;
   padding-right: 6.5%;
@@ -108,7 +107,6 @@ header, section, footer {
 .wrapper {
   padding: 0 0 30px;
   position: relative;
-  padding-bottom: 25%;
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -417,7 +415,12 @@ footer {
 * Media Queries
 */
 @include media-query($on-tablet) {
+  header {
+    padding-top: 14%;
+    padding-bottom: 16%;
+  }
   header h1 {
+    line-height: 2.8rem;
     font-size: 2.5rem;
   }
   header p {
@@ -430,27 +433,32 @@ footer {
   .post-list li h2 {
     margin-top: 0px;
   }
-  .wrapper {
-    padding-bottom: 40%;
-  }
   header, section, footer {
     padding-left: 5.5%;
     padding-right: 5.5%;
   }
 }
-@include media-query($on-palm) {
+@include media-query($on-palm + 100px) {
+  header {
+    padding-top: 20%;
+    padding-bottom: 30%;
+  }
   header h1 {
+    line-height: 2.6rem;
     font-size: 2.2rem;
   }
   header p {
     margin-top: 5px;
-    font-size: 1.2rem;
-  }
-  .wrapper {
-    padding-bottom: 50%;
+    font-size: 1rem;
   }
   header, section, footer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@include media-query($on-palm - 200px) {
+  header {
+    padding-top: 25%;
+    padding-bottom: 50%;
   }
 }

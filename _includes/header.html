@@ -2,8 +2,8 @@
 
 <header>
   <div class="wrapper">
-    {% if page.title %}<h1>{{ page.title }}</h1>{% else %}<h1>{{ site.title }}</h1>{% endif %}
     {% if page.path contains '_posts' %}<p class="post-meta">{{ reading-time }} read ● {{ page.date | date: '%-d %B %Y' }}</p>{% else if page.sub %}<p>{{ site.sub }}</p>{% else %}<p>{{ site.description }}</p>{% endif %}
+    {% if page.title %}<h1>{{ page.title }}</h1>{% else %}<h1>{{ site.title }}</h1>{% endif %}
   </div>
 </header>
 
@@ -19,5 +19,5 @@
     {% for p in pages order:ascending %}{% if p.is_in_nav == true %}<li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
     {% endif %}{% endfor %}
   </ul>
-  
+
 </div>
