@@ -453,6 +453,22 @@ footer {
   }
 }
 @include media-query($on-palm + 100px) {
+  footer {
+    p {
+      clear: both;
+      display: flex;
+      justify-content: center;
+    }
+    .social {
+      li {
+        margin: 5px;
+        font-size: 2rem;
+      }
+      display: flex;
+      margin-bottom: 5px;
+      justify-content: center;
+    }
+  }
   header {
     padding-top: 20%;
     padding-bottom: 30%;
