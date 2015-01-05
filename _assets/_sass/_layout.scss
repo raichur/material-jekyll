@@ -9,6 +9,9 @@ body {
   color: $primaryTextColor;
   background: $textPrimaryColor;
   -webkit-text-size-adjust: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 #bg-blur {
   background: rgba(0,0,0,.6);
@@ -282,9 +285,17 @@ nav{
       background: transparent;
       &:before{
         transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+        -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+        -o-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+        -ms-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+        -moz-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
       }
       &:after{
         transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+        -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+        -o-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+        -ms-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+        -moz-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
       }
     }
     .icon-right {
@@ -292,9 +303,17 @@ nav{
       background: transparent;
       &:before{
         transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+        -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+        -o-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+        -ms-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+        -moz-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
       }
       &:after{
         transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+        -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+        -o-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+        -ms-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+        -moz-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
       }
     }
   }
@@ -470,17 +489,13 @@ footer {
   footer {
     p {
       clear: both;
-      display: flex;
-      justify-content: center;
     }
     .social {
       li {
         margin: 5px;
         font-size: 2rem;
+        float: left;
       }
-      display: flex;
-      margin-bottom: 5px;
-      justify-content: center;
     }
   }
   header {
