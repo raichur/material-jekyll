@@ -36,17 +36,16 @@ $on-laptop:        1100px;
 
 @font-face {
   font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?cgbs0a');
-  src:url('fonts/icomoon.eot?#iefixcgbs0a') format('embedded-opentype'),
-  url('fonts/icomoon.woff?cgbs0a') format('woff'),
-  url('fonts/icomoon.ttf?cgbs0a') format('truetype'),
-  url('fonts/icomoon.svg?cgbs0a#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?-599psd');
+  src:url('fonts/icomoon.eot?#iefix-599psd') format('embedded-opentype'),
+  url('fonts/icomoon.woff?-599psd') format('woff'),
+  url('fonts/icomoon.ttf?-599psd') format('truetype'),
+  url('fonts/icomoon.svg?-599psd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 [class^="icon-"], [class*=" icon-"] {
-  color: $primaryTextColor;
-  z-index: 3;
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -57,20 +56,40 @@ $on-laptop:        1100px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-instagram:before {content: "\e600";}
-.icon-favorite:before {content: "\e601"}
-.icon-favorite-outline:before {content: "\e602"}
-.icon-drafts:before {content: "\e603"}
-.icon-keyboard-arrow-down:before {content: "\e604"}
-.icon-keyboard-arrow-left:before {content: "\e605"}
-.icon-keyboard-arrow-right:before {content: "\e606";}
-.icon-keyboard-arrow-up:before {content: "\e607";}
-.icon-brightness-2:before {content: "\e608";}
-.icon-brightness-4:before {content: "\e609";}
-.icon-star:before {content: "\e60a";}
-.icon-twitter:before {content: "\ea91";}
-.icon-dribbble:before {content: "\eaa6";}
-.icon-github:before {content: "\eab1";}
+
+.icon-instagram:before { content: "\e600"; }
+
+.icon-favorite:before { content: "\e601"; }
+
+.icon-favorite-outline:before { content: "\e602"; }
+
+.icon-call-made:before { content: "\e60b"; }
+
+.icon-drafts:before { content: "\e603"; }
+
+.icon-reply-all:before { content: "\e60c"; }
+
+.icon-keyboard-arrow-down:before { content: "\e604"; }
+
+.icon-keyboard-arrow-left:before { content: "\e605"; }
+
+.icon-keyboard-arrow-right:before { content: "\e606"; }
+
+.icon-keyboard-arrow-up:before { content: "\e607"; }
+
+.icon-brightness-2:before { content: "\e608"; }
+
+.icon-brightness-4:before { content: "\e609"; }
+
+.icon-publ:before { content: "\e60d"; }
+
+.icon-star:before { content: "\e60a"; }
+
+.icon-twitter:before { content: "\ea91"; }
+
+.icon-dribbble:before { content: "\eaa6"; }
+
+.icon-github:before { content: "\eab1"; }
 
 
 /**

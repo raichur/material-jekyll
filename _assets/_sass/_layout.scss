@@ -78,6 +78,11 @@ header {
     text-align: left;
     width: auto;
   }
+  h1 span {
+    font-size: 3rem;
+    margin-right: 10px;
+    color: $textPrimaryColor !important;
+  }
   p {
     color: $textPrimaryColor;
     height: 1em;
