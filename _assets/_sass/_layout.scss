@@ -197,12 +197,14 @@ nav {
   span {
     @extend %menu-lines;
     &:before {
+      position: absolute;
       @extend %menu-lines;
       transform: translate(0, -24px);
     }
     &:after {
+      position: absolute;
       @extend %menu-lines;
-      transform: translate(0, 12px);
+      transform: translate(0, 24px);
     }
   }
   &.opened {
@@ -216,7 +218,7 @@ nav {
       }
       &:after {
         width: 60%;
-        transform: rotate(-45deg) translate(29px, 32px);
+        transform: rotate(-45deg) translate(20px, 40px);
         transition: 0.23s ease-in-out;
       }
     }
