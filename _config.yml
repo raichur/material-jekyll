@@ -4,7 +4,6 @@ email: hello@joshuaraichur.com
 description: A Material Design inspired Jekyll theme
 footer_text: 'Made with <span class="icon-favorite pulse"></span> by <a href="http://joshuaraichur.com">Joshua Raichur</a>. <a href="http://github.com/raichur/material-jekyll">View the source.</a>'
 baseurl: "/material-jekyll"
-permalink: "/:title/"
 
 # Social usernames
 twitter_username: JoshuaRaichur
@@ -12,6 +11,7 @@ github_username:  raichur
 dribbble_username: geek
 instagram_username: xpl.ore
 email: hello@joshuaraichur.com
+disqus_shortname: joshuaraichur # Leave blank if you don't want comment
 
 # Build settings
 markdown: kramdown
@@ -19,6 +19,7 @@ include: ['_pages', '_assets']
 exculde: ['.sass_cache', 'README.md']
 sass:
   sass_dir: '_assets/_sass'
+permalink: "/:title/"
 
 # Defaults
 defaults:

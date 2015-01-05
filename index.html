@@ -14,7 +14,7 @@ home: true
       {% assign reading-time = words | divided_by:180 | append:" minute" %}
       {% endif %}
       <li>
-        <span class="post-meta">{{ reading-time }} read ● {{ post.date | date: '%A, %-d %B %Y' }}</span>
+        <span class="post-meta">{{ reading-time }} read ● {{ post.date | date: '%-d %B %Y' }}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
