@@ -9,9 +9,9 @@ home: true
 
       {% assign words = post.content | number_of_words %}
       {% if words <= 90 %}
-      {% assign reading-time = "1 minute" %}
+      {% assign reading-time = "1m" %}
       {% else %}
-      {% assign reading-time = words | divided_by:180 | append:" minute" %}
+      {% assign reading-time = words | divided_by:180 | append:"m" %}
       {% endif %}
       <li>
         <span class="post-meta">{{ reading-time }} read ● {{ post.date | date: '%-d %B %Y' }}</span>

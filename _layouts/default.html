@@ -8,11 +8,11 @@
     {% if page.path contains '_posts' %}
       {% assign words = content | number_of_words %}
       {% if words <= 90 %}
-      {% assign reading-time = "1 minute" %}
+      {% assign reading-time = "1m" %}
       {% elsif words < 270 %}
-      {% assign reading-time = "1 minute" %}
+      {% assign reading-time = "1m" %}
       {% else %}
-      {% assign reading-time = words | divided_by:180 | append:" minute" %}
+      {% assign reading-time = words | divided_by:180 | append:"m" %}
       {% endif %}
     {% endif %}
 
