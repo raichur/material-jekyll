@@ -1,4 +1,11 @@
 <footer>
+  <ul class="social">
+  {% if site.twitter_username %}<li><a href="http://twitter.com/{{ site.twitter_username }}"><span class="icon-twitter"></span></a></li>{% endif %}
+  {% if site.github_username %}<li><a href="http://github.com/{{ site.github_username }}"><span class="icon-github"></span></a></li>{% endif %}
+  {% if site.dribbble_username %}<li><a href="http://dribbble.com/{{ site.dribbble_username }}"><span class="icon-dribbble"></span></a></li>{% endif %}
+  {% if site.instagram_username %}<li><a href="http://instagram.com/{{ site.instagram_username }}"><span class="icon-instagram"></span></a></li>{% endif %}
+  {% if site.email %}<li><a href="mailto:{{ site.email }}"><span class="icon-drafts"></span></a></li>{% endif %}
+  </ul>
   <p>{{ site.footer_text }}</p>
 </footer>
 

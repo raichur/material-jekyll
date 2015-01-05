@@ -31,7 +31,7 @@ shortcut.add("Shift+Up", function() {
 * Animations
 */
 
-$(".wrapper h1, .wrapper p, section").velocity("transition.slideDownIn", 400, { stagger: 550 });
+$(".wrapper h1, .wrapper p, section, footer").velocity("transition.slideDownIn", 400, { stagger: 550 });
 $(".paper-button").delay(100).velocity("transition.fadeIn", 250);
 $('a[id="home"]').click(function(e){
   e.preventDefault();

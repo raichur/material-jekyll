@@ -9,6 +9,9 @@ permalink: "/:title/"
 # Social usernames
 twitter_username: JoshuaRaichur
 github_username:  raichur
+dribbble_username: geek
+instagram_username: xpl.ore
+email: hello@joshuaraichur.com
 
 # Build settings
 markdown: kramdown
