@@ -35,7 +35,7 @@ $(".wrapper h1, .wrapper p, section, footer").velocity("transition.slideDownIn",
 $(".paper-button").delay(100).velocity("transition.fadeIn", 250);
 $(document).ready(function() {
   // bind click event to all internal page anchors
-  $("a[href*=#]").bind("click", function(e) {
+  $("a[href*=#], .footnote").bind("click", function(e) {
     // prevent default action and bubbling
     e.stopPropagation();
     // set target to anchor's "href" attribute
@@ -52,42 +52,16 @@ $(document).ready(function() {
 * Nav
 */
 
-function openCloseNav() {
-  var nav = $(this);
-  var list = $('.list');
-  var back = $('#bg-blur');
-  var body = $('body');
-  if (nav.hasClass('opened')) {
-    nav.addClass('closed');
-    nav.one('transitionend', function() {
-      nav.removeClass('opened closed');
-      list.velocity("transition.slideLeftBigOut", 250);
-      back.velocity("transition.fadeOut", 200);
-      body.removeClass('fixed');
-    });
-  } else {
-    nav.addClass('opened');
-    list.velocity("transition.slideLeftBigIn", 200);
-    back.velocity("transition.fadeIn", 200);
-    body.addClass('fixed');
-  }
+function openCloseNav(){
+  $(".navToggle").toggleClass("open");
+  $("nav").toggleClass("open");
+  $('#bg-blur').fadeToggle();
+  $('body').toggleClass('fixed');
 }
+$(".navToggle").click(openCloseNav);
 
-$('nav').click(openCloseNav);
 $('#bg-blur').click(function(event) {
-  if($('nav').is(":visible")) {
-    var nav = $('nav')
-    var list = $('.list');
-    var back = $('#bg-blur');
-    var body = $('body');
-    nav.addClass('closed');
-    nav.one('transitionend', function() {
-      nav.removeClass('opened closed');
-      list.velocity("transition.slideLeftBigOut", 250);
-      back.velocity("transition.fadeOut", 200);
-      body.removeClass('fixed');
-    });
-  }
+  openCloseNav();
 });
 
 // Hide Header on on scroll down

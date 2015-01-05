@@ -11,7 +11,6 @@ github_username:  raichur
 dribbble_username: geek
 instagram_username: xpl.ore
 email: hello@joshuaraichur.com
-disqus_shortname: joshuaraichur # Leave blank if you don't want comment
 
 # Build settings
 markdown: kramdown

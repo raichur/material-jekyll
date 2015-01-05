@@ -1,4 +1,7 @@
 <div id="bg-blur"></div>
+<div aria-busy="true" aria-label="Loading, please wait." role="progressbar"></div>
+
+<div class="content-wrap">
 
 <header>
   <div class="wrapper">
@@ -7,17 +10,16 @@
   </div>
 </header>
 
-<div id="nav-wrapper">
-
   <nav>
-    <span></span>
+    <div class="navToggle">
+      <div class="icon-left"></div>
+      <div class="icon-right"></div>
+    </div>
+    <div class="nav-title">{{ site.title }}</div>
+    <ul>
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      {% assign pages = site.pages | sort:"url" %}
+      {% for p in pages order:ascending %}{% if p.is_in_nav == true %}<li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %}{% endfor %}
+    </ul>
   </nav>
-
-  <ul class="list">
-    <li><a href="{{ site.baseurl }}/">Home</a></li>
-    {% assign pages = site.pages | sort:"url" %}
-    {% for p in pages order:ascending %}{% if p.is_in_nav == true %}<li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
-    {% endif %}{% endfor %}
-  </ul>
-
-</div>
