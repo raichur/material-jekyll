@@ -2,7 +2,7 @@
 title: Material Jekyll
 email: hello@joshuaraichur.com
 description: A Material Design inspired Jekyll theme
-footer_text: 'Made with <span class="icon-favorite pulse"></span> by <a href="http://joshuaraichur.com">Joshua Raichur</a>. <a href="http://github.com/raichur/material-jekyll">View the source.</a>'
+footer_text: 'Made with <span class="icon-favorite pulse"></span> by <a href="http://joshuaraichur.com">Joshua Raichur</a>. <a href="http://github.com/raichur/material-jekyll">Fork the source.</a>'
 baseurl: "/material-jekyll"
 
 # Social usernames
