@@ -380,16 +380,35 @@ footer {
   100% { -webkit-transform: scale(1); }
 }
 @keyframes pulse {
-  0% { -webkit-transform: scale(1); }
-  30% { -webkit-transform: scale(1); }
-  40% { -webkit-transform: scale(1.3); }
-  50% { -webkit-transform: scale(1); }
-  60% { -webkit-transform: scale(1); }
-  70% { -webkit-transform: scale(1.3); }
-  80% { -webkit-transform: scale(1); }
-  100% { -webkit-transform: scale(1); }
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1.3); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.3); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
-
+@-moz-keyframes pulse {
+  0% { -moz-transform: scale(1); }
+  30% { -moz-transform: scale(1); }
+  40% { -moz-transform: scale(1.3); }
+  50% { -moz-transform: scale(1); }
+  60% { -moz-transform: scale(1); }
+  70% { -moz-transform: scale(1.3); }
+  80% { -moz-transform: scale(1); }
+  100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+  0% { -o-transform: scale(1); }
+  30% { -o-transform: scale(1); }
+  40% { -o-transform: scale(1.3); }
+  50% { -o-transform: scale(1); }
+  60% { -o-transform: scale(1); }
+  70% { -o-transform: scale(1.3); }
+  80% { -o-transform: scale(1); }
+  100% { -o-transform: scale(1); }
+}
 
 /**
 * Buttons and all that jazz

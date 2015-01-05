@@ -1,3 +1,9 @@
 # Material Jekyll
 
-A simple Jekyll theme inspired by Google's new visual language, Material Design. It's a work in progress (It'll be ready soon). You can see it's half-baked version [here](http://joshuaraichur.com/material-jekyll) if you want to.
+A simple [Jekyll](http://jekyllrb.com) theme inspired by Google's new visual language, [Material Design](http://www.google.com/design/spec/material-design/introduction.html).
+
+## Setup:
+
+1. Clone this repo
+2. Edit the `_config.yml` file
+3. Run `jekyll serve -w`
