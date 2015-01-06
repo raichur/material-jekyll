@@ -497,9 +497,9 @@ footer {
 /**
 * Media Queries
 */
-@include media-query($on-tablet+300px) {
+@include media-query($on-tablet+400px) {
   .post-list li {
-    width: 50%;
+    width: 100%;
   }
 }
 @include media-query($on-tablet) {
