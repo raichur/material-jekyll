@@ -100,7 +100,7 @@ header {
     opacity: .8;
   }
 }
-header, footer {
+header, footer, section {
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -135,24 +135,25 @@ header, footer {
 * Post list
 */
 .post-list {
+  display: block;
+  margin: 0 auto;
   li {
     transition: .2s all ease;
     list-style: none;
     border-radius:5px;
     padding: 15px;
-    width: 20%;
-    background: $textPrimaryColor;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 3px 20px -15px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 3px 20px -15px rgba(0,0,0,0.5);
-    box-shadow: 0px 3px 20px -15px rgba(0,0,0,0.5);
+    width: 25vw;
+    background: lighten($textPrimaryColor, 3.5%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 6px 25px -11px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 25px -11px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 25px -11px rgba(0,0,0,0.5);
     transition: all .2s cubic-bezier(.4, 0, .2, 1);
     &:hover {
-      -webkit-box-shadow: 0px 8px 30px -7px rgba(0,0,0,0.5);
-      -moz-box-shadow: 0px 8px 30px -7px rgba(0,0,0,0.5);
-      box-shadow: 0px 8px 30px -7px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0px 8px 25px -7px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 8px 25px -7px rgba(0,0,0,0.5);
+      box-shadow: 0px 8px 25px -7px rgba(0,0,0,0.5);
     }
     .post-meta {
       color: $secondaryTextColor;
@@ -170,7 +171,7 @@ header, footer {
     }
     h2 {
       margin-top: 5px;
-      font-size: 45px;
+      font-size: 35px;
       line-height: 2.8rem;
     }
   }
@@ -496,7 +497,15 @@ footer {
 /**
 * Media Queries
 */
+@include media-query($on-tablet+300px) {
+  .post-list li {
+    width: 50%;
+  }
+}
 @include media-query($on-tablet) {
+  .post-list li {
+    width: 100%;
+  }
   header {
     padding-top: 14%;
     padding-bottom: 16%;
@@ -521,6 +530,9 @@ footer {
   }
 }
 @include media-query($on-palm + 100px) {
+  .post-list li {
+    width: 100%;
+  }
   footer {
     p {
       clear: both;
