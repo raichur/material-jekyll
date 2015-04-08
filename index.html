@@ -6,7 +6,6 @@ home: true
 <div id="home">
   <ul class="post-list">
       {% for post in site.posts %}
-
       {% assign words = post.content | number_of_words %}
       {% if words <= 90 %}
       {% assign reading-time = "1m" %}

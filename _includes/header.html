@@ -1,8 +1,5 @@
 <div id="bg-blur"></div>
-<div aria-busy="true" aria-label="Loading, please wait." role="progressbar"></div>
-
 <div class="content-wrap">
-
 <header>
   <div class="wrapper">
     {% if page.path contains '_posts' %}<p class="post-meta">{{ reading-time }} read ● {{ page.date | date: '%-d %B %Y' }}</p>{% else if page.sub %}<p>{{ site.sub }}</p>{% else %}<p>{{ site.description }}</p>{% endif %}
